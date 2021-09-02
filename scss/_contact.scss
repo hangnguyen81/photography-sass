@@ -1,0 +1,42 @@
+.contact{
+    height: 100%;
+    padding: 20vh .2rem 0 .2rem;
+    overflow: hidden; //no scroll bar appear
+    @include background-img;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-items{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    &-item{
+        &__title{            
+            font-size: $fs-h3;
+            color: set-text-color($primary-color);
+        }
+        &__text{
+            font-size: $fs-h4;
+            color: $secondary-color;
+        }
+    }
+
+    .social-icons{
+        margin-top: 1rem;
+        display: flex;
+        padding: 0 1rem;
+        a{
+            padding: .5em;
+            @include transition-ease;
+
+            &:hover{
+                color: $secondary-color
+            }
+        }
+        
+    }
+}

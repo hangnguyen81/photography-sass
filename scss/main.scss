@@ -1,0 +1,88 @@
+@import 'config';
+@import 'home';
+@import 'menu';
+@import 'about';
+@import 'products';
+@import 'contact';
+@import 'responsive';
+
+body{
+    background-color: $primary-color;
+    color: set-text-color($primary-color);
+    height: 100vh;
+    font-family: $font-family;
+    line-height: 1.5;
+}
+
+// Typography
+h1,
+h2,
+h3{
+    font-weight: $font-regular;
+}
+
+a{
+    color: set-text-color($primary-color);
+    text-decoration: none;
+}
+
+.section-title{
+    color: set-text-color($primary-color);
+    font-size: $fs-h2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+.section-subtitle{
+    color: set-text-color($primary-color);
+    font-size: $fs-h4;
+    font-weight: $font-bold;
+    margin: 1em 0;
+
+    &::after{
+        content: '';
+        display: block;
+        width: 70px;
+        height: 3px;
+        margin-top: 10px ;
+        background-color: $secondary-color;
+    }
+}
+
+
+// Header section
+header{
+    position: fixed; // make header is always on top 
+    width: 100%;
+    z-index: 2;
+    padding: 1rem;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    .social-icons{
+        // display: flex;
+        // flex-direction: column;
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem;
+        a{
+            padding: .5em;
+            @include transition-ease;
+
+            &:hover{
+                color: $secondary-color
+            }
+        }
+    }
+}
+
+footer{
+    font-size: 1rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+
+}

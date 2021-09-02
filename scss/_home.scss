@@ -1,0 +1,27 @@
+.home{
+    height: 100%;
+    padding-top: 25vh;
+    overflow: hidden; //no scroll bar appear
+    align-items: center;
+    text-align: center;    
+    @include background-img;
+
+    &-name{
+        text-transform: uppercase;
+        font-size: $fs-h1;
+        border-bottom: 2px solid set-text-color($primary-color);
+        padding-bottom: 1rem;
+        line-height: 1.2;
+        &__last{
+            color: $secondary-color;
+            font-weight: $font-bold;
+            margin-bottom: 1rem;
+            padding-bottom: .5rem;
+        }
+    } 
+    &-subtitle{
+        font-size: 1.25rem ;
+        margin: 1em auto;
+        letter-spacing: 1px;
+    }   
+}
