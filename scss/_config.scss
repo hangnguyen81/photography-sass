@@ -1,5 +1,5 @@
 $primary-color: #164a41;
-$secondary-color: #f1b24a; //#ff652f
+$secondary-color: #f1b24a; 
 $body-text-color: #fff;
 
 $font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -27,7 +27,6 @@ $fs-body: 1rem;
 @mixin box-shadow-style{
     border: 1px solid $body-text-color;
     box-shadow: 1px 1px 1px $secondary-color;
-    //box-shadow: 5px 5px 0 $body-text-color, 10px 10px 0 $secondary-color;
 }
 
 @mixin background-img{

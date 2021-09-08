@@ -1,7 +1,6 @@
 .contact{
     height: 100%;
     padding: 20vh .2rem 0 .2rem;
-    overflow: hidden; //no scroll bar appear
     @include background-img;
     display: flex;
     flex-direction: column;

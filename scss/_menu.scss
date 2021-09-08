@@ -19,7 +19,6 @@
     }
 
     &__hamburger{
-        //middle line of hamburger
         top: .5rem;
         width: 25px;
 
@@ -28,13 +27,11 @@
             content: '';
         }
 
-        //first line of hamburger    
         &::before{
             top: -8px;
             width: 28px;
         }
 
-        //third line of hamburger
         &::after{
             top: 8px;
             width: 22px;
@@ -42,12 +39,12 @@
 
         &.open {
             transform: rotate(360deg);
-            background: transparent; // the middle line is gone
+            background: transparent; 
             &::before{
                 transform: rotate(45deg) translate(5px, 8px);
             }
             &::after{
-                width: 28px; //make it longer, equal to the first line
+                width: 28px; 
                 transform: rotate(-45deg) translate(3px, -7px);
             }
         }
